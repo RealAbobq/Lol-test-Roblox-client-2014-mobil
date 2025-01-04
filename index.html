@@ -14,7 +14,6 @@
             background-color: #007bff;
             border: none;
             border-radius: 5px;
-            text-decoration: none;
             cursor: pointer;
         }
         .button:hover {
@@ -30,12 +29,9 @@
     <button class="button" id="launchButton">Launch Game</button>
 
     <script>
-        // Обработчик нажатия кнопки
         document.getElementById('launchButton').addEventListener('click', function () {
             const filePath = './lol.rblx'; // Укажите имя вашего файла
             const robloxProtocol = `roblox-player://launch?file=${location.origin}/${filePath}`;
-
-            // Открытие клиента Roblox
             window.location.href = robloxProtocol;
         });
     </script>
